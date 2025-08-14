@@ -14,15 +14,6 @@ const USPSection: React.FC = () => {
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Flexible Solutions & Payment Options",
-      subtitle: "Tailored to Your Needs",
-      description: "We understand that every hotel has unique requirements and budget considerations. That's why we offer complete flexibility in both our solutions and payment structures. Choose from static websites, dynamic sites with CMS, integrated booking engines, or complete PMS solutions. Payment-wise, select what works best for you: one-time payments for full ownership, annual plans for ongoing support, or monthly subscriptions with no long-term commitments. This flexibility ensures you get exactly what you need, when you need it, in a way that fits your business model.",
-      color: "from-[#5FBDB0] to-[#FFD700]",
-      bgPattern: "bg-gradient-to-br from-teal-50/50 to-yellow-50/50",
-      iconBg: "from-teal-500 to-yellow-500"
-    },
-    {
-      icon: <Settings className="w-8 h-8" />,
       title: "Dedicated Project Manager: Your Single Point of Contact",
       subtitle: "Personalized Experience",
       description: "Every project at StayTech is assigned a dedicated project manager. This ensures a seamless and personalized experience from the initial consultation to successful launch and beyond. Your project manager acts as your single point of contact, understanding your unique needs, coordinating our expert teams, and keeping you informed every step of the way. This personalized attention guarantees smooth execution and timely delivery.",
@@ -38,6 +29,15 @@ const USPSection: React.FC = () => {
       color: "from-[#0A2463] to-[#5FBDB0]",
       bgPattern: "bg-gradient-to-br from-blue-50/50 to-teal-50/50",
       iconBg: "from-blue-600 to-teal-500"
+    },
+    {
+      icon: <Settings className="w-8 h-8" />,
+      title: "Flexible Solutions & Payment Options",
+      subtitle: "Tailored to Your Needs",
+      description: "We understand that every hotel has unique requirements and budget considerations. That's why we offer complete flexibility in both our solutions and payment structures. Choose from static websites, dynamic sites with CMS, integrated booking engines, or complete PMS solutions. Payment-wise, select what works best for you: one-time payments for full ownership, annual plans for ongoing support, or monthly subscriptions with no long-term commitments. This flexibility ensures you get exactly what you need, when you need it, in a way that fits your business model.",
+      color: "from-[#5FBDB0] to-[#FFD700]",
+      bgPattern: "bg-gradient-to-br from-teal-50/50 to-yellow-50/50",
+      iconBg: "from-teal-500 to-yellow-500"
     }
   ];
 
