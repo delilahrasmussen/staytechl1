@@ -188,7 +188,7 @@ const ServicesOverview: React.FC<ServicesOverviewProps> = ({ onServiceSelect }) 
               {
                 step: '07',
                 title: 'Ongoing Support & Optimization',
-                description: 'If you\'ve chosen one of our ongoing service plans, we continue to support your success post-launch. From regular content updates and performance monitoring to seasonal landing pages and conversion improvements, we help keep your hotel website fresh, secure, and aligned with your evolving business goals.',
+                description: 'We continue to support your success post-launch. From regular content updates and performance monitoring to seasonal landing pages and conversion improvements, we help keep your hotel website fresh, secure, and aligned with your evolving business goals.',
                 gradient: 'from-[#0A2463] to-[#5FBDB0]'
               }
             ].map((process, index) => (
