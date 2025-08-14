@@ -152,7 +152,7 @@ const ServicesOverview: React.FC<ServicesOverviewProps> = ({ onServiceSelect }) 
               {
                 step: '01',
                 title: 'Discovery & Strategy',
-                description: 'Every hotel is unique—and your website should reflect that. We begin by understanding your property\'s brand, target guests, and business goals. Our strategists and designers work with you to define key requirements, analyze booking behavior, and build a roadmap that ensures your website drives direct reservations and supports your revenue goals.',
+                description: 'Every hotel is unique—and your website should reflect that. We begin by understanding your property\'s brand, target guests, and business goals. Our dedicated Project Manager works with you to define key requirements, analyze booking behavior, and build a roadmap that ensures your website drives direct reservations and supports your revenue goals.',
                 gradient: 'from-[#0A2463] to-[#5FBDB0]'
               },
               {
