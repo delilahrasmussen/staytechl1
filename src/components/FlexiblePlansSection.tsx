@@ -70,8 +70,8 @@ const FlexiblePlansSection: React.FC = () => {
             {/* Content */}
             <div className="relative z-10 text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-poppins mb-8 leading-tight">
-                Flexible Web Design Plans
-                <span className="block text-[#FFD700] mt-2">Tailored for Hotels</span>
+                Post Launch Support Plans
+                <span className="block text-[#FFD700] mt-2">Tailored to your needs</span>
               </h2>
               
               {/* Introduction Cards */}
