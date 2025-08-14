@@ -158,7 +158,7 @@ const ServicesOverview: React.FC<ServicesOverviewProps> = ({ onServiceSelect }) 
               {
                 step: '02',
                 title: 'Design Plan Selection',
-                description: 'Next, we help you choose the right design approach—Essence, Elevate, or Signature. Based on your selected plan and project requirements, we present 8–10 thoughtfully curated design concepts for you to choose from. This sets the creative direction and kickstarts your hotel website project with clarity.',
+                description: 'Next, we help you choose the right design approach—Essence, Elevate, or Signature. Based on your selected plan and project goals, we present 5 to 10 thoughtfully curated design concepts to guide your direction. This sets the creative tone and kickstarts your hotel website project with clarity.',
                 gradient: 'from-[#5FBDB0] to-[#FFD700]'
               },
               {
