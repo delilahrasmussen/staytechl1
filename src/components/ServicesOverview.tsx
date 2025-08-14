@@ -170,7 +170,7 @@ const ServicesOverview: React.FC<ServicesOverviewProps> = ({ onServiceSelect }) 
               {
                 step: '04',
                 title: 'Development',
-                description: 'Using best-in-class technology, our developers build your hotel website for speed, performance, and reliability. We integrate your preferred booking engine, ensure mobile responsiveness, and implement essential backend features like multi-language support, accessibility, and SEO optimization—so your site not only looks great, but performs flawlessly.',
+                description: 'Using best-in-class technology, our developers build your hotel website for speed, performance, and reliability. We integrate your preferred booking engine, ensure mobile responsiveness, and implement essential features like Booking Engine, analytic, GEO and SEO optimization—so your site not only looks great, but performs flawlessly.',
                 gradient: 'from-[#0A2463] to-[#5FBDB0]'
               },
               {
