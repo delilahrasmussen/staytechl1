@@ -165,7 +165,6 @@ const USPSection: React.FC = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 {[
                   { icon: <CheckCircle className="w-6 h-6" />, number: '200+', label: 'Hotels Delivered' },
-                  { icon: <CheckCircle className="w-6 h-6" />, number: '150+', label: 'Hotels Delivered' },
                   { icon: <Star className="w-6 h-6" />, number: '5.0', label: 'Average Rating' },
                   { icon: <TrendingUp className="w-6 h-6" />, number: '7', label: 'Days Delivery' },
                   { icon: <Shield className="w-6 h-6" />, number: '100%', label: 'Satisfaction Rate' }
