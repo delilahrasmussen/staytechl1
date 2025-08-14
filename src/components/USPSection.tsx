@@ -25,7 +25,7 @@ const USPSection: React.FC = () => {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Proven Booking Conversion Experts",
       subtitle: "Driving Your Direct Revenue",
-      description: "We are not generalist web developers; we are hotel booking conversion specialists. Our team possesses a deep understanding of the hospitality industry and what truly drives direct bookings online. We leverage this specialized expertise to design and develop websites that are not just visually appealing but are strategically optimized for high conversion rates, helping you maximize your revenue and reduce reliance on costly OTAs. Our track record includes hundreds of successful hotel websites and a reputation as a top 50 digital marketing agency for hotels worldwide.",
+      description: "We are not generalist web developers; we are hotel booking conversion specialists. Our team possesses a deep understanding of the hospitality industry and what truly drives direct bookings online. We leverage this specialized expertise to design and develop websites that are not just visually appealing but are strategically optimized for high conversion rates, helping you maximize your revenue and reduce reliance on costly OTAs. Our clients consistently see measurable improvements in direct bookings, and we're proud to be a trusted partner to independent hotels and boutique properties looking to grow their online presence.",
       color: "from-[#0A2463] to-[#5FBDB0]",
       bgPattern: "bg-gradient-to-br from-blue-50/50 to-teal-50/50",
       iconBg: "from-blue-600 to-teal-500"
