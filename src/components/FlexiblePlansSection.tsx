@@ -154,7 +154,7 @@ const FlexiblePlansSection: React.FC = () => {
                 <h4 className="text-lg font-medium text-[#5FBDB0] mb-3">
                   {plan.subtitle}
                 </h4>
-                <p className="text-sm font-semibold text-[#FFD700] mb-4 italic">
+                <p className="text-base font-bold text-[#0A2463] mb-4 bg-[#FFD700]/10 px-3 py-2 rounded-lg border-l-4 border-[#FFD700]">
                   {plan.tagline}
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
