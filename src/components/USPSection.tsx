@@ -5,7 +5,7 @@ const USPSection: React.FC = () => {
   const usps = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Pay Only When 100% Satisfied",
+      title: "No Advance Payment Needed",
       subtitle: "Your Risk-Free Guarantee",
       description: "We believe in the quality of our work so much that we require no advance payment. You only pay once your website is fully built, tested, and you are 100% satisfied with the result. This commitment extends to unlimited revisions during the design phase, ensuring the final product perfectly aligns with your vision and business goals. This policy is a testament to our confidence in delivering exceptional results and building trust from day one.",
       color: "from-[#0A2463] to-[#5FBDB0]",
