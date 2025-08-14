@@ -6,9 +6,9 @@ const FlexiblePlansSection: React.FC = () => {
     {
       id: 'direct-control',
       icon: <Code className="w-8 h-8" />,
-      title: 'Complete Ownership',
-      subtitle: '"Direct Control Plan"',
-      tagline: 'One-time payment. Full control.',
+      title: 'Handover Plan',
+      subtitle: '',
+      tagline: 'You manage everything post-launch',
       description: 'We design and develop your custom hotel website, then hand over the code to you. You manage hosting, updates, and maintenance independently. Ideal for hotels with their own in-house team or those seeking total autonomy.',
       includes: [
         'Custom design & development',
@@ -22,9 +22,9 @@ const FlexiblePlansSection: React.FC = () => {
     {
       id: 'harmony',
       icon: <Wrench className="w-8 h-8" />,
-      title: 'Ongoing Support',
-      subtitle: '"Harmony Plan"',
-      tagline: 'You manage your business, we manage your website.',
+      title: 'Managed Plan',
+      subtitle: '',
+      tagline: 'We handle hosting, updates, and maintenance',
       description: 'You pay an initial design and setup fee, followed by an annual plan covering hosting, domain, maintenance, and unlimited content updates. Perfect for hoteliers who want a modern site without the technical headaches.',
       includes: [
         'Custom design & development',
@@ -38,9 +38,9 @@ const FlexiblePlansSection: React.FC = () => {
     {
       id: 'zero-hassle',
       icon: <CreditCard className="w-8 h-8" />,
-      title: 'All-Inclusive',
-      subtitle: '"Zero Hassle Plan"',
-      tagline: 'No upfront cost. Just one flat monthly fee.',
+      title: 'Dedicated Plan',
+      subtitle: '',
+      tagline: 'Frequent updates and ongoing support with dedicated staff',
       description: 'This subscription plan covers everything—design, hosting, maintenance, updates—without any upfront fees. A great option for hotels wanting a professional site with zero hassle or large initial costs.',
       includes: [
         'No upfront website cost',
