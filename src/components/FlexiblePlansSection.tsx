@@ -11,10 +11,10 @@ const FlexiblePlansSection: React.FC = () => {
       tagline: 'You take full control post-launch—best for teams with in-house technical capabilities.',
       description: 'We design and develop your hotel website, collaborate on revisions, and ensure everything meets your expectations. Once the site is complete, we hand over all files, source code, and assets. From there, your in-house team handles hosting, deployment, maintenance, and future updates. This one-time engagement is ideal for properties with technical teams who prefer full control. No ongoing costs beyond the initial build.',
       includes: [
-        'Custom design & development',
-        'One-time fee',
-        'Full code ownership',
-        'No ongoing payments'
+        'Complete website design & development',
+        'Full source code & asset handover',
+        'Collaboration on revisions until satisfied',
+        'One-time payment, no ongoing costs'
       ],
       gradient: 'from-[#0A2463] to-[#5FBDB0]',
       bgGradient: 'from-blue-50 to-teal-50',
@@ -28,10 +28,10 @@ const FlexiblePlansSection: React.FC = () => {
       tagline: 'We take care of hosting, updates, and routine maintenance—ideal for most hotels.',
       description: 'After we design and launch your website, we continue to manage the technical side so you don\'t have to. This includes hosting, domain management, software updates, security monitoring, and routine maintenance. If anything breaks, we fix it. You\'ll also get up to three free content or design updates per year, keeping your site fresh without added hassle. A stress-free, hands-off solution for busy hotel teams.',
       includes: [
-        'Custom design & development',
-        'Initial setup fee',
-        'Annual maintenance & hosting',
-        'Unlimited content updates'
+        'Website design, launch & hosting',
+        'Domain management & security monitoring',
+        'Software updates & maintenance',
+        'Up to 3 free content/design updates per year'
       ],
       gradient: 'from-[#5FBDB0] to-[#FFD700]',
       bgGradient: 'from-teal-50 to-yellow-50',
@@ -45,10 +45,10 @@ const FlexiblePlansSection: React.FC = () => {
       tagline: 'High-touch, ongoing support with frequent updates—suited for large or fast-growing properties.',
       description: 'This plan is built for hotels and brands that require frequent updates, complex integrations, or a more involved digital presence. You get priority access to a dedicated team member who handles everything from content changes and promotions to new feature rollouts. Ideal for hotel chains, lifestyle brands, or rapidly growing businesses. Custom scope and pricing are determined based on your specific needs.',
       includes: [
-        'No upfront website cost',
-        'Custom design & development',
-        'Hosting, domain & unlimited updates',
-        'Cancel anytime'
+        'Priority dedicated team member access',
+        'Frequent content changes & promotions',
+        'New feature rollouts & complex integrations',
+        'Custom scope based on specific needs'
       ],
       gradient: 'from-[#FFD700] to-[#0A2463]',
       bgGradient: 'from-yellow-50 to-blue-50',
