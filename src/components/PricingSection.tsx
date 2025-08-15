@@ -54,6 +54,7 @@ const PricingSection: React.FC = () => {
           'Complete Website Design & Development package included',
           'All design, content, and technical features from above',
           'plus'
+          'plus'
         ],
         'Booking Engine Features': [
           'Integrated Booking Engine (Seamless, branded booking system)',
