@@ -1,76 +1,108 @@
 import React from 'react';
-import { Check, Star, Shield, Crown, Zap, Sparkles, ArrowRight, Globe, Calendar } from 'lucide-react';
+import { Check, Star, Shield, Crown, Zap, Sparkles, ArrowRight, Globe, Calendar, Settings, BarChart3, Users, Wifi, Search, Image, Phone, MessageCircle, TrendingUp, CreditCard, Database, Headphones } from 'lucide-react';
 
 const PricingSection: React.FC = () => {
   const plans = [
     {
-      name: 'Website Design',
+      name: 'Website Design & Development',
       price: '₹19,999',
       period: 'one-time',
-      description: 'Custom Hotel Website Design',
+      description: 'A complete, mobile-friendly hotel website built to impress and convert',
       badge: 'Essential',
-      badgeColor: 'from-gray-500 to-gray-600',
-      features: [
-        '1-Year Hosting & Maintenance',
-        'Six Updates (Year 1)',
-        'Logo Design Included',
-        'Brochure Design',
-        'Content Writing',
-        'Up to 12 Pages',
-        'Mobile Responsive Design',
-        'SEO Optimization',
-        'SSL Certificate Included',
-        'Year 2+: ₹3,600 hosting, domain and maintenance',
-        'Alternative: ₹999/month subscription'
-      ],
+      badgeColor: 'from-blue-500 to-blue-600',
+      features: {
+        'Design & Content': [
+          'Website Design & Development (Beautiful site design and coding)',
+          'Content Writing & Editing (We write or polish your existing content)',
+          'Unlimited Pages (As many pages as your hotel needs—no restrictions)',
+          'Logo Design (Custom or refinements to your existing logo)',
+          'Mobile-Responsive Design (Optimized for all devices)'
+        ],
+        'Technical & Performance': [
+          'SEO Optimization (On-page SEO best practices for visibility)',
+          'SSL Certificate (Ensures secure browsing for your guests)',
+          'Fast Loading Performance (Optimized for speed and performance)',
+          'Image Optimization (For fast and sharp visuals)',
+          'Complimentary Domain Name (Free for the first year)',
+          'Complimentary Hosting (Free for the first year)'
+        ],
+        'Integrations & Features': [
+          'Contact & Inquiry Form (With email delivery setup)',
+          'Social Media Integration (Linking Facebook, Instagram, etc.)',
+          'WhatsApp Chat Integration (One-tap link for guests to message)',
+          'Basic Analytics Integration (Google Analytics setup)'
+        ],
+        'Post-Launch Support': [
+          'Training & Handover (Basic walkthrough and guide after launch)',
+          'Three Free Updates a Year (Complimentary design/content revisions)'
+        ]
+      },
       popular: false,
-      color: 'from-slate-600 to-slate-700',
-      bgGradient: 'from-slate-50 to-gray-50',
+      color: 'from-blue-600 to-blue-700',
+      bgGradient: 'from-blue-50 to-indigo-50',
       icon: <Globe className="w-6 h-6" />
     },
     {
-      name: 'Website + Booking',
+      name: 'Website + Booking Engine',
       price: '₹39,999',
       period: 'one-time',
-      description: 'Bespoke website design + integrated booking engine',
+      description: 'All the features of the first plan, plus a powerful booking system with admin control',
       badge: 'Most Popular',
       badgeColor: 'from-[#FFD700] to-[#FFA500]',
-      features: [
-        'Everything in Website Design',
-        'Up to 24 Pages',
-        'Integrated Booking Engine',
-        'Real-time Availability System',
-        'Secure Payment Processing',
-        'Commission-free Bookings',
-        'Guest Management System',
-        'Year 2+: ₹4,800 annual maintenance',
-        'Alternative: ₹1,999/month subscription',
-        'No Lock-in Period'
-      ],
+      features: {
+        'Everything in Website Package': [
+          'Complete Website Design & Development package included',
+          'All design, content, and technical features from above'
+        ],
+        'Booking Engine Features': [
+          'Integrated Booking Engine (Seamless, branded booking system)',
+          'Admin Dashboard Access (Full control panel for bookings)',
+          'Pricing & Availability Control (Easy rate and availability updates)',
+          'Booking Management Tools (Manage reservations in one place)',
+          'Real-Time Booking Updates (Instant updates to avoid double bookings)',
+          'Secure Payment Processing (Trusted payment gateways)'
+        ],
+        'Business Benefits': [
+          'Commission-Free Bookings (100% yours—no third-party fees)',
+          'Guest Management System (Track guest details and history)',
+          'Booking Engine Styling (Matches your website perfectly)',
+          'Booking Flow Optimization (Designed to maximize conversions)',
+          'Booking Engine Training (Team walkthrough included)'
+        ]
+      },
       popular: true,
       color: 'from-[#0A2463] to-[#5FBDB0]',
       bgGradient: 'from-blue-50 to-teal-50',
       icon: <Calendar className="w-6 h-6" />
     },
     {
-      name: 'Complete Solution',
+      name: 'Enterprise Package',
       price: 'Custom',
       period: 'pricing',
-      description: 'Custom website, PMS & intelligent analytics',
+      description: 'Advanced tools, integrations, and multi-property support tailored for larger hotels or chains',
       badge: 'Enterprise',
       badgeColor: 'from-purple-500 to-indigo-600',
-      features: [
-        'Everything in Website + Booking',
-        'Complete Property Management System',
-        'Intelligent Analytics Dashboard',
-        'Revenue Management Tools',
-        'Custom Integrations',
-        'Dedicated Account Manager',
-        'Advanced Reporting',
-        'Multi-property Support',
-        'Pricing Tailored to Requirements',
-        'Enterprise-level Support'
-      ],
+      features: {
+        'Everything in Previous Packages': [
+          'Complete Website + Booking Engine package included',
+          'All features from both previous tiers'
+        ],
+        'Advanced Management': [
+          'Complete Property Management System (Full PMS dashboard)',
+          'Intelligent Analytics Dashboard (Real-time performance tracking)',
+          'Revenue Management Tools (Dynamic pricing and optimization)',
+          'Multi-Property Support (Manage multiple locations)',
+          'Advanced Reporting (Custom reports and insights)'
+        ],
+        'Enterprise Support': [
+          'Dedicated Account Manager (Single point of contact)',
+          'Enterprise-Level Support (Priority assistance and monitoring)',
+          'Custom Integrations (API and third-party software)',
+          'Team Access & Permissions (Multi-user access control)',
+          'Guest CRM Integration (Personalized communication tools)',
+          'Marketing Integration Support (Email marketing and remarketing)'
+        ]
+      },
       popular: false,
       color: 'from-purple-600 to-indigo-600',
       bgGradient: 'from-purple-50 to-indigo-50',
@@ -93,36 +125,32 @@ const PricingSection: React.FC = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#0A2463] to-[#5FBDB0] text-white px-6 py-3 rounded-full mb-8">
             <Sparkles className="w-5 h-5 text-[#FFD700]" />
-            <span className="font-semibold">Transparent Investment Options</span>
+            <span className="font-semibold">Our Website Packages</span>
             <Sparkles className="w-5 h-5 text-[#FFD700]" />
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold text-[#0A2463] font-poppins mb-6 leading-tight">
-            Choose Your
+            Flexible Options for
             <span className="block bg-gradient-to-r from-[#5FBDB0] to-[#FFD700] bg-clip-text text-transparent">
-              Investment Level
+              Hotels of Every Size
             </span>
           </h2>
           
           <div className="max-w-5xl mx-auto space-y-6 mb-8">
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Whether you prefer complete ownership with a one-time investment or the flexibility of monthly payments, 
-              we have options that work for your hotel's budget and preferences.
+              Whether you're a boutique stay, a family-run homestay, or a fast-growing hotel brand, 
+              we have a plan that fits your needs. Choose from three tiers of service based on how 
+              hands-on you want us to be.
             </p>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              All plans include the same high-quality design and development—just choose the payment structure that fits your business model.
+              Each package is designed to help you attract more guests, increase direct bookings, 
+              and present your property beautifully online. You only pay for what you need, with 
+              clear deliverables and no hidden costs.
             </p>
-          </div>
-          
-          {/* Trust Badge */}
-          <div className="inline-flex items-center space-x-3 bg-green-50 border-2 border-green-200 text-green-700 px-8 py-4 rounded-2xl shadow-lg">
-            <Shield className="w-6 h-6 text-green-600" />
-            <span className="font-bold text-lg">Pay Only When 100% Satisfied</span>
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
           </div>
         </div>
 
-        {/* Enhanced Pricing Cards */}
+        {/* Package Overview Cards */}
         <div className="grid lg:grid-cols-3 gap-8 mb-20">
           {plans.map((plan, index) => (
             <div
@@ -181,24 +209,33 @@ const PricingSection: React.FC = () => {
                         {plan.period}
                       </span>
                     </div>
-                    {plan.name !== 'Complete Solution' && (
+                    {plan.name !== 'Enterprise Package' && (
                       <div className="text-sm text-gray-500">
-                        Starting from this investment level
+                        Complete package pricing
                       </div>
                     )}
                   </div>
                 </div>
 
-                {/* Features */}
-                <div className="space-y-4 mb-8">
-                  {plan.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-start space-x-3 group/feature">
-                      <div className={`flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br ${plan.color} flex items-center justify-center mt-0.5 group-hover/feature:scale-110 transition-transform duration-200`}>
-                        <Check className="w-3.5 h-3.5 text-white" />
+                {/* Features by Category */}
+                <div className="space-y-6 mb-8">
+                  {Object.entries(plan.features).map(([category, features], categoryIndex) => (
+                    <div key={categoryIndex} className="bg-gray-50/50 rounded-xl p-4">
+                      <h4 className="font-bold text-[#0A2463] mb-3 text-sm uppercase tracking-wide">
+                        {category}
+                      </h4>
+                      <div className="space-y-2">
+                        {features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start space-x-3 group/feature">
+                            <div className={`flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-br ${plan.color} flex items-center justify-center mt-0.5 group-hover/feature:scale-110 transition-transform duration-200`}>
+                              <Check className="w-3 h-3 text-white" />
+                            </div>
+                            <span className="text-gray-700 text-sm leading-relaxed group-hover/feature:text-gray-900 transition-colors">
+                              {feature}
+                            </span>
+                          </div>
+                        ))}
                       </div>
-                      <span className="text-gray-700 text-sm leading-relaxed group-hover/feature:text-gray-900 transition-colors">
-                        {feature}
-                      </span>
                     </div>
                   ))}
                 </div>
@@ -207,11 +244,11 @@ const PricingSection: React.FC = () => {
                 <button className={`w-full py-4 px-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
                   plan.popular
                     ? 'bg-gradient-to-r from-[#0A2463] to-[#5FBDB0] text-white hover:shadow-[#0A2463]/25'
-                    : plan.name === 'Complete Solution'
+                    : plan.name === 'Enterprise Package'
                     ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:shadow-purple-500/25'
-                    : 'bg-gradient-to-r from-gray-600 to-gray-700 text-white hover:shadow-gray-500/25'
+                    : 'bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:shadow-blue-500/25'
                 }`}>
-                  {plan.name === 'Complete Solution' ? (
+                  {plan.name === 'Enterprise Package' ? (
                     <span className="flex items-center justify-center space-x-2">
                       <Crown className="w-5 h-5" />
                       <span>Get Custom Quote</span>
@@ -219,7 +256,7 @@ const PricingSection: React.FC = () => {
                     </span>
                   ) : (
                     <span className="flex items-center justify-center space-x-2">
-                      <span>Choose This Plan</span>
+                      <span>Choose This Package</span>
                       <ArrowRight className="w-5 h-5" />
                     </span>
                   )}
@@ -231,7 +268,7 @@ const PricingSection: React.FC = () => {
                     <p className="text-xs text-gray-500 mb-2">⚡ Most hotels choose this option</p>
                     <div className="flex items-center justify-center space-x-2 text-[#5FBDB0] text-sm font-medium">
                       <Zap className="w-4 h-4" />
-                      <span>Includes everything you need to get started</span>
+                      <span>Perfect balance of features and value</span>
                     </div>
                   </div>
                 )}
@@ -269,8 +306,8 @@ const PricingSection: React.FC = () => {
               </div>
               
               <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-4xl mx-auto leading-relaxed">
-                We believe in earning your trust through results, not contracts. That's why we offer flexible payment options 
-                and guarantee your satisfaction before any payment is required.
+                We believe in earning your trust through results, not contracts. That's why we offer 
+                transparent pricing and guarantee your satisfaction before any payment is required.
               </p>
 
               {/* Guarantee Cards */}
@@ -299,66 +336,13 @@ const PricingSection: React.FC = () => {
                   <div className="w-16 h-16 bg-[#FFD700] rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-[#0A2463] font-bold text-2xl">✓</span>
                   </div>
-                  <h4 className="font-bold mb-3 text-lg text-white">Flexible Payment Options</h4>
+                  <h4 className="font-bold mb-3 text-lg text-white">Clear Deliverables</h4>
                   <p className="text-blue-100 text-sm leading-relaxed">
-                    Choose one-time payment for ownership or monthly subscriptions with no long-term contracts.
+                    Transparent pricing with clear deliverables and no hidden costs or surprises.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Value Proposition Section */}
-        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 mb-16 border border-gray-100">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#0A2463] mb-6 font-poppins">
-              Why Hotels Choose StayTech
-            </h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join 200+ hotels that have transformed their digital presence with our proven approach.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: 'Risk-Free Approach',
-                description: 'See your complete website before any payment',
-                gradient: 'from-green-500 to-emerald-600'
-              },
-              {
-                icon: <Crown className="w-8 h-8" />,
-                title: 'Hotel Specialists',
-                description: 'Deep expertise in hospitality industry',
-                gradient: 'from-[#0A2463] to-[#5FBDB0]'
-              },
-              {
-                icon: <Zap className="w-8 h-8" />,
-                title: 'Fast Delivery',
-                description: 'Many projects completed within 7 days',
-                gradient: 'from-[#FFD700] to-[#FFA500]'
-              },
-              {
-                icon: <Star className="w-8 h-8" />,
-                title: 'Proven Results',
-                description: '5.0 rating from 200+ satisfied hotels',
-                gradient: 'from-purple-500 to-pink-500'
-              }
-            ].map((benefit, index) => (
-              <div key={index} className="text-center group/benefit">
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${benefit.gradient} rounded-2xl text-white mb-4 group-hover/benefit:scale-110 transition-transform duration-300 shadow-lg`}>
-                  {benefit.icon}
-                </div>
-                <h4 className="text-lg font-bold text-[#0A2463] mb-2 font-poppins">
-                  {benefit.title}
-                </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
 
@@ -375,13 +359,14 @@ const PricingSection: React.FC = () => {
               <div className="flex items-center justify-center space-x-4 mb-6">
                 <Sparkles className="w-8 h-8 text-[#FFD700]" />
                 <h3 className="text-2xl md:text-4xl font-bold font-poppins">
-                  Choose a Partner You Can Count On
+                  Ready to Transform Your Hotel's Online Presence?
                 </h3>
                 <Sparkles className="w-8 h-8 text-[#FFD700]" />
               </div>
               
               <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Join hundreds of hotels that have transformed their digital presence and increased direct bookings with StayTech.
+                Join hundreds of hotels that have increased their direct bookings and enhanced their 
+                guest experience with StayTech's professional website solutions.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -410,7 +395,7 @@ const PricingSection: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span>IIT Graduate Team</span>
+                  <span>7-Day Delivery</span>
                 </div>
               </div>
             </div>
