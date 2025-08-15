@@ -236,6 +236,16 @@ const PricingSection: React.FC = () => {
                           </div>
                         ))}
                       </div>
+                      
+                      {/* Add plus icon between specific sections */}
+                      {((plan.name === 'Website + Booking Engine' && category === 'Everything in Website Package') ||
+                        (plan.name === 'Enterprise Package' && category === 'Everything in Previous Packages')) && (
+                        <div className="flex justify-center my-6">
+                          <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full flex items-center justify-center shadow-lg">
+                            <span className="text-[#0A2463] font-bold text-2xl">+</span>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
