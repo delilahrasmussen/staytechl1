@@ -4,11 +4,11 @@ import { Crown, Shield, Zap, Check, Code, Wrench, CreditCard } from 'lucide-reac
 const FlexiblePlansSection: React.FC = () => {
   const plans = [
     {
-      id: 'direct-control',
+      id: 'independent',
       icon: <Code className="w-8 h-8" />,
-      title: 'Handover Plan',
+      title: 'Independent Plan',
       subtitle: '',
-      tagline: 'You manage everything post-launch',
+      tagline: 'You take full control post-launch—best for teams with in-house technical capabilities.',
       description: 'We design and develop your custom hotel website, then hand over the code to you. You manage hosting, updates, and maintenance independently. Ideal for hotels with their own in-house team or those seeking total autonomy.',
       includes: [
         'Custom design & development',
@@ -20,11 +20,11 @@ const FlexiblePlansSection: React.FC = () => {
       bgGradient: 'from-blue-50 to-teal-50'
     },
     {
-      id: 'harmony',
+      id: 'managed',
       icon: <Wrench className="w-8 h-8" />,
       title: 'Managed Plan',
       subtitle: '',
-      tagline: 'We handle hosting, updates, and maintenance',
+      tagline: 'We take care of hosting, updates, and routine maintenance—ideal for most hotels.',
       description: 'You pay an initial design and setup fee, followed by an annual plan covering hosting, domain, maintenance, and unlimited content updates. Perfect for hoteliers who want a modern site without the technical headaches.',
       includes: [
         'Custom design & development',
@@ -36,11 +36,11 @@ const FlexiblePlansSection: React.FC = () => {
       bgGradient: 'from-teal-50 to-yellow-50'
     },
     {
-      id: 'zero-hassle',
+      id: 'dedicated',
       icon: <CreditCard className="w-8 h-8" />,
       title: 'Dedicated Plan',
       subtitle: '',
-      tagline: 'Frequent updates and ongoing support with dedicated staff',
+      tagline: 'High-touch, ongoing support with frequent updates—suited for large or fast-growing properties.',
       description: 'This subscription plan covers everything—design, hosting, maintenance, updates—without any upfront fees. A great option for hotels wanting a professional site with zero hassle or large initial costs.',
       includes: [
         'No upfront website cost',
