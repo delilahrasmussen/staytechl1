@@ -50,7 +50,7 @@ const PricingSection: React.FC = () => {
       badge: 'Most Popular',
       badgeColor: 'from-[#FFD700] to-[#FFA500]',
       features: {
-        'Everything in Website Package': [
+        'You get Everything in Website Package': [
           'Complete Website Design & Development package included',
           'All design, content, and technical features from above'
         ],
@@ -83,7 +83,7 @@ const PricingSection: React.FC = () => {
       badge: 'Enterprise',
       badgeColor: 'from-purple-500 to-indigo-600',
       features: {
-        'Everything in Previous Packages': [
+        'You get Everything in Previous Packages': [
           'Complete Website + Booking Engine package included',
           'All features from both previous tiers'
         ],
@@ -238,11 +238,11 @@ const PricingSection: React.FC = () => {
                       </div>
                       
                       {/* Add plus icon between specific sections */}
-                      {((plan.name === 'Website + Booking Engine' && category === 'Everything in Website Package') ||
-                        (plan.name === 'Enterprise Package' && category === 'Everything in Previous Packages')) && (
+                      {((plan.name === 'Website + Booking Engine' && category === 'You get Everything in Website Package') ||
+                        (plan.name === 'Enterprise Package' && category === 'You get Everything in Previous Packages')) && (
                         <div className="flex justify-center my-6">
-                          <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full flex items-center justify-center shadow-lg">
-                            <span className="text-[#0A2463] font-bold text-2xl">+</span>
+                          <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                            <span className="text-[#0A2463] font-bold text-3xl italic transform rotate-12">+</span>
                           </div>
                         </div>
                       )}
