@@ -107,8 +107,8 @@ function App() {
       <SmartDesignOptions />
       <TemplateShowcase />
       <DashboardShowcase />
-      <FlexiblePlansSection />
       <PricingSection />
+      <FlexiblePlansSection />
       <AboutSection />
       <TestimonialsSection />
       <ContactSection />
