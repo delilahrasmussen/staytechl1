@@ -9,7 +9,7 @@ const FlexiblePlansSection: React.FC = () => {
       title: 'Independent Plan',
       subtitle: '',
       tagline: 'You take full control post-launch—best for teams with in-house technical capabilities.',
-      description: 'We design and develop your custom hotel website, then hand over the code to you. You manage hosting, updates, and maintenance independently. Ideal for hotels with their own in-house team or those seeking total autonomy.',
+      description: 'We design and develop your hotel website, collaborate on revisions, and ensure everything meets your expectations. Once the site is complete, we hand over all files, source code, and assets. From there, your in-house team handles hosting, deployment, maintenance, and future updates. This one-time engagement is ideal for properties with technical teams who prefer full control. No ongoing costs beyond the initial build.',
       includes: [
         'Custom design & development',
         'One-time fee',
@@ -17,7 +17,8 @@ const FlexiblePlansSection: React.FC = () => {
         'No ongoing payments'
       ],
       gradient: 'from-[#0A2463] to-[#5FBDB0]',
-      bgGradient: 'from-blue-50 to-teal-50'
+      bgGradient: 'from-blue-50 to-teal-50',
+      popular: false
     },
     {
       id: 'managed',
@@ -25,7 +26,7 @@ const FlexiblePlansSection: React.FC = () => {
       title: 'Managed Plan',
       subtitle: '',
       tagline: 'We take care of hosting, updates, and routine maintenance—ideal for most hotels.',
-      description: 'You pay an initial design and setup fee, followed by an annual plan covering hosting, domain, maintenance, and unlimited content updates. Perfect for hoteliers who want a modern site without the technical headaches.',
+      description: 'After we design and launch your website, we continue to manage the technical side so you don\'t have to. This includes hosting, domain management, software updates, security monitoring, and routine maintenance. If anything breaks, we fix it. You\'ll also get up to three free content or design updates per year, keeping your site fresh without added hassle. A stress-free, hands-off solution for busy hotel teams.',
       includes: [
         'Custom design & development',
         'Initial setup fee',
@@ -33,7 +34,8 @@ const FlexiblePlansSection: React.FC = () => {
         'Unlimited content updates'
       ],
       gradient: 'from-[#5FBDB0] to-[#FFD700]',
-      bgGradient: 'from-teal-50 to-yellow-50'
+      bgGradient: 'from-teal-50 to-yellow-50',
+      popular: true
     },
     {
       id: 'dedicated',
@@ -41,7 +43,7 @@ const FlexiblePlansSection: React.FC = () => {
       title: 'Dedicated Plan',
       subtitle: '',
       tagline: 'High-touch, ongoing support with frequent updates—suited for large or fast-growing properties.',
-      description: 'This subscription plan covers everything—design, hosting, maintenance, updates—without any upfront fees. A great option for hotels wanting a professional site with zero hassle or large initial costs.',
+      description: 'This plan is built for hotels and brands that require frequent updates, complex integrations, or a more involved digital presence. You get priority access to a dedicated team member who handles everything from content changes and promotions to new feature rollouts. Ideal for hotel chains, lifestyle brands, or rapidly growing businesses. Custom scope and pricing are determined based on your specific needs.',
       includes: [
         'No upfront website cost',
         'Custom design & development',
@@ -49,7 +51,8 @@ const FlexiblePlansSection: React.FC = () => {
         'Cancel anytime'
       ],
       gradient: 'from-[#FFD700] to-[#0A2463]',
-      bgGradient: 'from-yellow-50 to-blue-50'
+      bgGradient: 'from-yellow-50 to-blue-50',
+      popular: false
     }
   ];
 
@@ -136,11 +139,24 @@ const FlexiblePlansSection: React.FC = () => {
           {plans.map((plan, index) => (
             <div
               key={plan.id}
-              className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border overflow-hidden ${
+                plan.popular 
+                  ? 'border-[#FFD700] ring-4 ring-[#FFD700]/20 scale-105' 
+                  : 'border-gray-100 hover:border-gray-300'
+              }`}
             >
               {/* Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${plan.bgGradient} opacity-0 group-hover:opacity-30 rounded-2xl transition-opacity duration-300`}></div>
               
+              {/* Popular Badge */}
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                  <div className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#0A2463] px-6 py-3 rounded-full text-sm font-bold flex items-center space-x-2 shadow-lg">
+                    <span>⭐ Most Popular</span>
+                  </div>
+                </div>
+              )}
+
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${plan.gradient} rounded-xl text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg relative z-10`}>
                 {plan.icon}
