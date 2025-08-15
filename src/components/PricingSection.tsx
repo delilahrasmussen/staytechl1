@@ -52,7 +52,8 @@ const PricingSection: React.FC = () => {
       features: {
         'Everything in Website Package': [
           'Complete Website Design & Development package included',
-          'All design, content, and technical features from above'
+          'All design, content, and technical features from above',
+          'plus'
         ],
         'Booking Engine Features': [
           'Integrated Booking Engine (Seamless, branded booking system)',
@@ -85,7 +86,8 @@ const PricingSection: React.FC = () => {
       features: {
         'Everything in Previous Packages': [
           'Complete Website + Booking Engine package included',
-          'All features from both previous tiers'
+          'All features from both previous tiers',
+          'plus'
         ],
         'Advanced Management': [
           'Complete Property Management System (Full PMS dashboard)',
