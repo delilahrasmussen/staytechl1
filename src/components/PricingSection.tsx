@@ -241,8 +241,8 @@ const PricingSection: React.FC = () => {
                       {((plan.name === 'Website + Booking Engine' && category === 'You get Everything in Website Package') ||
                         (plan.name === 'Enterprise Package' && category === 'You get Everything in Previous Packages')) && (
                         <div className="flex justify-center my-6">
-                          <div className="w-16 h-16 bg-gradient-to-br from-[#FFD700] to-[#FFA500] rounded-full flex items-center justify-center shadow-xl border-4 border-white">
-                            <span className="text-[#0A2463] font-bold text-3xl italic transform rotate-12">+</span>
+                          <div className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] rounded-2xl px-8 py-4 shadow-xl border-2 border-white transform rotate-1">
+                            <h3 className="text-[#0A2463] font-bold text-2xl italic tracking-wider">Plus</h3>
                           </div>
                         </div>
                       )}
