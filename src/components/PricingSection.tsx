@@ -85,7 +85,7 @@ const PricingSection: React.FC = () => {
       features: {
         'You get Everything in Previous Packages': [
           'Complete Website + Booking Engine package included',
-          'All features from both previous tiers'
+          'All features from both previous tiers are included'
         ],
         'Advanced Management': [
           'Complete Property Management System (Full PMS dashboard)',
