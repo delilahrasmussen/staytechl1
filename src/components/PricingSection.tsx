@@ -60,7 +60,8 @@ const PricingSection: React.FC = () => {
           'Pricing & Availability Control (Easy rate and availability updates)',
           'Booking Management Tools (Manage reservations in one place)',
           'Real-Time Booking Updates (Instant updates to avoid double bookings)',
-          'Secure Payment Processing (Trusted payment gateways)'
+          'Secure Payment Processing (Trusted payment gateways)',
+          'Custom Booking Rules (Set minimum stay requirements, blackout dates, or special conditions)'
         ],
         'Business Benefits': [
           'Commission-Free Bookings (100% yours—no third-party fees)',
