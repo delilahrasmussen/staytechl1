@@ -206,7 +206,7 @@ const PricingSection: React.FC = () => {
                     )}
                     {plan.name === 'Enterprise Package' && (
                       <div className="text-sm text-gray-500">
-                        depends on features opted
+                        Depends on features opted
                       </div>
                     )}
                   </div>
