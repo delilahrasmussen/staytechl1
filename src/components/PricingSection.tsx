@@ -47,8 +47,8 @@ const PricingSection: React.FC = () => {
       price: '₹39,999',
       period: 'one-time',
       description: 'All the features of the first plan, plus a powerful booking system with admin control',
-      badge: 'Most Popular',
-      badgeColor: 'from-[#FFD700] to-[#FFA500]',
+      badge: 'Complete Solution',
+      badgeColor: 'from-[#5FBDB0] to-[#0A2463]',
       features: {
         'You get Everything in Website Package': [
           'Complete Website Design & Development package included',
@@ -70,7 +70,7 @@ const PricingSection: React.FC = () => {
           'Booking Engine Training (Team walkthrough included)'
         ]
       },
-      popular: true,
+      popular: false,
       color: 'from-[#0A2463] to-[#5FBDB0]',
       bgGradient: 'from-blue-50 to-teal-50',
       icon: <Calendar className="w-6 h-6" />
@@ -156,27 +156,15 @@ const PricingSection: React.FC = () => {
             <div
               key={index}
               className={`group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 overflow-hidden ${
-                plan.popular 
-                  ? 'border-[#FFD700] ring-4 ring-[#FFD700]/20 scale-105' 
-                  : 'border-gray-200 hover:border-gray-300'
+                'border-gray-200 hover:border-gray-300'
               }`}
             >
               {/* Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${plan.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
               
               {/* Popular Badge */}
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className={`bg-gradient-to-r ${plan.badgeColor} text-white px-6 py-3 rounded-full text-sm font-bold flex items-center space-x-2 shadow-lg`}>
-                    <Star className="w-4 h-4 fill-current" />
-                    <span>{plan.badge}</span>
-                    <Star className="w-4 h-4 fill-current" />
-                  </div>
-                </div>
-              )}
-
-              {/* Plan Badge for non-popular plans */}
-              {!plan.popular && (
+              {/* Plan Badge */}
+              {plan.badge && (
                 <div className="absolute top-6 right-6 z-20">
                   <div className={`bg-gradient-to-r ${plan.badgeColor} text-white px-4 py-2 rounded-full text-xs font-bold shadow-md`}>
                     {plan.badge}
@@ -273,15 +261,6 @@ const PricingSection: React.FC = () => {
                 </button>
 
                 {/* Popular Plan Extra CTA */}
-                {plan.popular && (
-                  <div className="mt-4 text-center">
-                    <p className="text-xs text-gray-500 mb-2">⚡ Most hotels choose this option</p>
-                    <div className="flex items-center justify-center space-x-2 text-[#5FBDB0] text-sm font-medium">
-                      <Zap className="w-4 h-4" />
-                      <span>Perfect balance of features and value</span>
-                    </div>
-                  </div>
-                )}
               </div>
 
               {/* Decorative Elements */}
