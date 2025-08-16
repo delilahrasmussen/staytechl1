@@ -68,7 +68,8 @@ const PricingSection: React.FC = () => {
           'Guest Management System (Track guest details and history)',
           'Booking Engine Styling (Matches your website perfectly)',
           'Booking Flow Optimization (Designed to maximize conversions)',
-          'Booking Engine Training (Team walkthrough included)'
+          'Booking Engine Training (Team walkthrough included)',
+          'Guest Review Integration (Allow guests to leave reviews or integrate with existing review platforms)'
         ]
       },
       popular: false,
