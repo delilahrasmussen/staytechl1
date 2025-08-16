@@ -92,7 +92,8 @@ const PricingSection: React.FC = () => {
           'Intelligent Analytics Dashboard (Real-time performance tracking)',
           'Revenue Management Tools (Dynamic pricing and optimization)',
           'Multi-Property Support (Manage multiple locations)',
-          'Advanced Reporting (Custom reports and insights)'
+          'Advanced Reporting (Custom reports and insights)',
+          'Multi-Currency & Multi-Language Support (Expand to international audiences)'
         ],
         'Enterprise Support': [
           'Dedicated Account Manager (Single point of contact)',
