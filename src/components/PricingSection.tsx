@@ -258,6 +258,11 @@ const PricingSection: React.FC = () => {
                       <ArrowRight className="w-5 h-5" />
                     </span>
                   )}
+                  {plan.name === 'Enterprise Package' && (
+                    <div className="text-sm text-gray-500">
+                      depends on features opted
+                    </div>
+                  )}
                 </button>
 
                 {/* Popular Plan Extra CTA */}
