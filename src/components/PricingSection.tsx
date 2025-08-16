@@ -161,7 +161,7 @@ const PricingSection: React.FC = () => {
               key={index}
               className={`group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 overflow-hidden ${
                 'border-gray-200 hover:border-gray-300'
-              }`}
+              } flex flex-col`}
             >
               {/* Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${plan.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
@@ -176,7 +176,7 @@ const PricingSection: React.FC = () => {
                 </div>
               )}
 
-              <div className="relative z-10 p-8 pt-12">
+              <div className="relative z-10 p-8 pt-12 flex flex-col h-full">
                 {/* Plan Header */}
                 <div className="text-center mb-8">
                   {/* Icon */}
@@ -215,7 +215,7 @@ const PricingSection: React.FC = () => {
                 </div>
 
                 {/* Features by Category */}
-                <div className="space-y-6 mb-8">
+                <div className="space-y-6 mb-8 flex-grow">
                   {Object.entries(plan.features).map(([category, features], categoryIndex) => (
                     <div key={categoryIndex} className="bg-gray-50/50 rounded-xl p-4">
                       <h4 className="font-bold text-[#0A2463] mb-3 text-sm uppercase tracking-wide">
@@ -248,13 +248,14 @@ const PricingSection: React.FC = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className={`w-full py-4 px-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
+                <div className="mt-auto">
+                  <button className={`w-full py-4 px-6 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
                   plan.popular
                     ? 'bg-gradient-to-r from-[#0A2463] to-[#5FBDB0] text-white hover:shadow-[#0A2463]/25'
                     : plan.name === 'Enterprise Package'
                     ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:shadow-purple-500/25'
                     : 'bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:shadow-blue-500/25'
-                }`}>
+                  }`}>
                   {plan.name === 'Enterprise Package' ? (
                     <span className="flex items-center justify-center space-x-2">
                       <Crown className="w-5 h-5" />
@@ -272,7 +273,8 @@ const PricingSection: React.FC = () => {
                       depends on features opted
                     </div>
                   )}
-                </button>
+                  </button>
+                </div>
 
                 {/* Popular Plan Extra CTA */}
               </div>
