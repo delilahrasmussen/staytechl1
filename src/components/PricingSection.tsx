@@ -55,7 +55,7 @@ const PricingSection: React.FC = () => {
           'All design, content, and technical features from above'
         ],
         'Booking Engine Features': [
-          'Integrated Booking Engine (Seamless, branded booking system)',
+          'Integrated Booking Engine (Seamless, zero-commission booking system)',
           'Admin Dashboard Access (Full control panel for bookings)',
           'Pricing & Availability Control (Easy rate and availability updates)',
           'Booking Management Tools (Manage reservations in one place)',
