@@ -6,7 +6,7 @@ const PricingSection: React.FC = () => {
     {
       name: 'Website Design & Development',
       price: '₹19,999',
-      period: 'one-time',
+      period: '',
       description: 'A complete, mobile-friendly hotel website built to impress and convert',
       badge: 'Essential',
       badgeColor: 'from-blue-500 to-blue-600',
@@ -45,7 +45,7 @@ const PricingSection: React.FC = () => {
     {
       name: 'Website + Booking Engine',
       price: '₹39,999',
-      period: 'one-time',
+      period: '',
       description: 'All the features of the first plan, plus a powerful booking system with admin control',
       badge: 'Complete Solution',
       badgeColor: 'from-[#5FBDB0] to-[#0A2463]',
