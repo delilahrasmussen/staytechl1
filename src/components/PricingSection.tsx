@@ -96,6 +96,7 @@ const PricingSection: React.FC = () => {
           'Multi-Currency & Multi-Language Support (Expand to international audiences)'
         ],
         'Enterprise Support': [
+          'AI-Powered Chat & Virtual Concierge (Enhance guest service with automated responses, upselling, and 24/7 virtual support)',
           'Dedicated Account Manager (Single point of contact)',
           'Enterprise-Level Support (Priority assistance and monitoring)',
           'Custom Integrations (API and third-party software)',
