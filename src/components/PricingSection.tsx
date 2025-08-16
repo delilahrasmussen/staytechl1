@@ -46,7 +46,7 @@ const PricingSection: React.FC = () => {
       name: 'Website + Booking Engine',
       price: '₹39,999',
       period: '',
-      description: 'All the features of the first plan, plus a powerful commission-free booking engine',
+      description: 'All the features of the first plan, plus a powerful booking engine',
       badge: 'Complete Solution',
       badgeColor: 'from-[#5FBDB0] to-[#0A2463]',
       features: {
